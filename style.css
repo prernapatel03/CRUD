@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+    background-color: #EBEBED;
+    min-height: 150vh;
+}
+
+/*  main container  */
+.container{
+    height: 130vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* sub-container 1 */
+
+.container .sub-container{
+   background-color: #FFFBFA;
+   height: 800px;
+   width: 465px;
+   padding: 0 25px;
+}
+
+/*  sub-container 2 */
+
+.container .sub-container2{
+    background-color: #342E37;
+    height: 500px;
+    width: 765px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align:center;
+    /* font-size: 16px; */
+    
+    color: #ffffff;
+}
+.container .sub-container2 p{
+ font-size: 32px;
+}
+
+ /* form  */
+
+ .container .sub-container form{
+    position: relative;
+    width: 100%;
+    padding: 20px 0px 0 0px;
+ }
+  
+ .container .sub-container form .form-input  label{
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    /* padding: 28px 0 0 0; */
+    margin-top: 28px;
+    margin-bottom: 10px;
+ }
+
+ 
+ .container .sub-container form .form-input input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 16px 0px;
+    background-color: #D9D9D9;
+    outline: none;
+    display: block;
+    width: 100%;
+}
+
+
+.container .sub-container .form-button{
+    margin-top: 20px;
+    float: right;
+    background-color: black;
+    border-radius: 5px;
+    color: #D9D9D9;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    size: 12px;
+    line-height: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.input-value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.input-value p{
+    margin-right: 60px;
+}
+.container .sub-container form .input-value label{
+  
+   margin: 0;
+}
+.container .sub-container form .input-value input{ 
+    width: 10%;
+}
+
+/*  media quries */
+
+@media screen and (max-width: 900px) {
+.container{
+
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+}
+ .container .sub-container{  
+    width: 50%;
+    height: 90%;
+}
+ .container .sub-container2{ 
+    height: 60%; 
+    width: 50%;
+}
+.container .sub-container form .form-input label{
+
+}
+/* input[type="text"]{
+    width: 100%;
+} */
+.container .sub-container form .sub-container .form-button{
+    width: 100%;
+
+    padding: 10px 0px;
+}
+
+}

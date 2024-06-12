@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+font-family: Roboto;
+padding: 0;
+margin: 0;
+background-color: #EBEBED;
+}
+
+/*  main container  */
+.container{
+height: 100vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+/* sub-container 1 */
+
+.container .sub-container{
+background-color: #FFFBFA;
+height: 500px;
+width: 465px;
+padding: 0 25px;
+}
+
+/*  sub-container 2 */
+
+.container .sub-container2{
+background-color: #342E37;
+height: 500px;
+width: 765px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+text-align:center;
+/* font-size: 16px; */
+
+color: #ffffff;
+}
+.container .sub-container2 p{
+font-size: 32px;
+}
+
+/* form  */
+
+.container .sub-container form{
+position: relative;
+width: 100%;
+padding: 50px 0px 0 0px;
+}
+
+.container .sub-container form .form-input  label{
+font-size: 18px;
+color: #000000;
+display: block;
+/* padding: 28px 0 0 0; */
+margin-top: 28px;
+margin-bottom: 10px;
+}
+
+
+.container .sub-container form input{
+border: none;
+border-bottom: 1px solid black;
+padding: 16px 0px;
+background-color: #D9D9D9;
+outline: none;
+display: block;
+width: 100%;
+}
+
+
+.container .sub-container .form-button{
+
+
+margin-top: 20px;
+float: right;
+background-color: black;
+border-radius: 5px;
+color: #D9D9D9;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+size: 12px;
+line-height: 14px;
+padding: 10px;
+width: 100%;
+}
+
+/*  admin  */
+
+.container .sub-container .admin{
+position: absolute;
+top: 103%;
+}
+
+.container .sub-container .admin a{
+/* color: #257DE4;
+font-size: 12px;
+*/
+text-decoration: none;
+
+padding-top: 130px;
+font-weight: 400;
+color: #257DE4;
+font-size: 12px;
+font-family: "Roboto", sans-serif;
+line-height: 14.05px;
+
+}
+
+.container .sub-container .admin p{
+padding-bottom: 80px;
+font-family: "Roboto", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.41px;
+
+}
+
+/*  media quries */
+
+@media screen and (max-width: 900px) {
+.container{
+
+display: flex;
+flex-direction: column;
+flex-flow: column-reverse;
+}
+.container .sub-container{  
+width: 50%;
+height: 90%;
+}
+.container .sub-container2{ 
+height: 60%; 
+width: 50%;
+}
+.container .sub-container form .form-input label{
+
+}
+/* input[type="text"]{
+width: 100%;
+} */
+.container .sub-container form .sub-container .form-button{
+width: 100%;
+
+padding: 10px 0px;
+}
+
+}
+
+#update-data{
+display: none;
+}
+
+
+/*  table */
+
+
+      
+::placeholder {
+    color: var(--dblack);
+    opacity: 1; 
+  }
+  
+  ::-ms-input-placeholder { 
+    color:var(--dblack);
+  }
+
+
+/*  table  */
+
+ .attendance-div{
+    min-height: 338px;
+    padding: 0 100px;  
+    }
+
+ table {
+    margin-top: 20px;
+    width: 100%;
+    line-height: 25px;
+      /* font-size: 10px; */
+  
+  }
+  table , th{
+      color: var(--dblack);
+      border-bottom: 2px solid #DBDBDF;
+
+  }
+  table, td {
+    border: 1px solid black;
+      border-bottom:  2px solid var(--lwhite);
+      text-align: center;
+      border-collapse: collapse;
+      font-weight: 500;
+    }
+
+    th:nth-child(1){
+        text-align: start;
+    }
+  
+    td:nth-child(1){
+        text-align: start;
+    }
+  
+  th, td {
+     padding: 10px 25px;
+     width: auto;
+    
+  }
+  table td:last-child button{
+    background-color: red;
+    color: #DBDBDF;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  table td:last-child button:last-child{
+    background-color: green;
+   
+  }
+
+  @media screen and (max-width: 142px) { 
+
+    .attendance-div{
+        padding: 0 3px;
+    }
+  }
+
+
+  /*  save changes */
+
+
+
+  #update-data label{
+    font-size: 18px;
+  color: #000000;
+  display: block;
+  /* padding: 28px 0 0 0; */
+  margin-top: 28px;
+  margin-bottom: 10px;
+  }
+  #update-data input{
+    border: none;
+  border-bottom: 1px solid black;
+  padding: 16px 0px;
+  background-color: #D9D9D9;
+  outline: none;
+  display: block;
+  width: 100%;
+  
+  }
+  
+  

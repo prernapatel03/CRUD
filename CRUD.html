@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD operation</title>
+    <link rel="stylesheet" href="CRUD.css">
+
+</head>
+
+<body>
+
+
+  <!-- <div>
+    <button onclick="logout()">logout</button>
+  </div> -->
+
+    <section class="container">
+
+      <div class="sub-container"  id="change_Data">
+        <form action="" name="form">
+              <h3>CRUD Operation</h3>
+
+                <div class="form-input">
+
+                    <label for="">name</label>
+                    <input type="text" id="input-fname" placeholder="name" /> 
+
+                </div>
+
+                <div class="form-input">
+
+                    <label for="">address</label>
+                    <input type="text" id="input-Add" placeholder="address" /> 
+      
+                </div>
+                <div class="form-input">
+
+                  <label for="">ph. number</label>
+                  <input type="number"  id="input-Number" placeholder="pho. number" />
+         
+              </div>
+
+
+                <button onclick="data()" type="button" class="form-button">Add</button>
+
+<!-- 
+                <div class="admin">
+                    <a href="">Admin?</a>
+                    <p>If you are not user you are not <br> welcome.</p>
+                </div> -->
+
+                <form> 
+        </div>
+ 
+
+     <div class="sub-container" id="update-data">
+       <form action="" name="form">
+        <h3>Save Chnages</h3>
+
+               <div class="form-input">
+
+                   <label for="">name</label>
+                   <input type="text" id="edit-fname" placeholder="name" />
+               </div>
+
+               <div class="form-input">
+
+                   <label for="">address</label>
+                   <input type="text" id="edit-add" placeholder="address" />
+               </div>
+               <div class="form-input">
+
+                 <label for="">ph. number</label>
+       <input type="number" id="edit-number" placeholder="pho. number" />
+             </div>
+
+             <button id="showData" type="button" class="form-button">save</button>
+             
+
+               <form> 
+       </div>
+
+
+   </section> 
+    <div id="container_list" class="attendance-div" style="overflow-x: auto;"></div>
+
+
+  
+<script src="CRUD.js"></script>
+<script>
+  function logout(){
+    // console.log("hii")
+   const x =  JSON.parse(localStorage.getItem('li'))
+   if(!JSON.parse(localStorage.getItem('li')) == 0){
+    localStorage.removeItem('li')
+    window.location.href = 'login.html'
+
+  }
+   else{
+    alert('you have already logged out')
+   }
+  }
+</script>
+</body>
+
+</html>
